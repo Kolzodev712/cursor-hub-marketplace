@@ -3,9 +3,16 @@
   "displayName": "Python Workflow",
   "version": "0.1.0",
   "description": "Python workflow: design review, implementation, testing, bugfix, PR review; documentation and security.",
-  "author": { "name": "Your Org" },
+  "author": {
+    "name": "Nikola Kolev",
+    "email": "nikolakolev712@gmail.com"
+  },
+  "homepage": "https://github.com/Kolzodev712/cursor-hub-marketplace",
+  "repository": "https://github.com/Kolzodev712/cursor-hub-marketplace",
   "license": "MIT",
   "keywords": ["python", "design-review", "implementation", "testing", "bugfix", "review"],
+  "category": "developer-tools",
+  "tags": ["python", "design-review", "testing", "bugfix", "pr-review"],
   "rules": "./rules/",
   "commands": "./commands/",
   "agents": "./agents/"

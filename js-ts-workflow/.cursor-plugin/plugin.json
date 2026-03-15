@@ -3,9 +3,16 @@
   "displayName": "JS/TS Workflow",
   "version": "0.1.0",
   "description": "JS/TS workflow: design review, implementation, testing, bugfix, PR review; documentation and security.",
-  "author": { "name": "Your Org" },
+  "author": {
+    "name": "Nikola Kolev",
+    "email": "nikolakolev712@gmail.com"
+  },
+  "homepage": "https://github.com/Kolzodev712/cursor-hub-marketplace",
+  "repository": "https://github.com/Kolzodev712/cursor-hub-marketplace",
   "license": "MIT",
   "keywords": ["javascript", "typescript", "design-review", "implementation", "testing", "bugfix", "review"],
+  "category": "developer-tools",
+  "tags": ["javascript", "typescript", "design-review", "testing", "bugfix", "pr-review"],
   "rules": "./rules/",
   "commands": "./commands/",
   "agents": "./agents/"

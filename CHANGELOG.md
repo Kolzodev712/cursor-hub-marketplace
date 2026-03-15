@@ -39,5 +39,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Full Terraform workflow: design review, implementation, testing, bugfix, PR review.
   - Documentation and security commands.
 
-[Unreleased]: https://github.com/your-org/cursor-hub-marketplace/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/your-org/cursor-hub-marketplace/releases/tag/v0.1.0
+[Unreleased]: https://github.com/Kolzodev712/cursor-hub-marketplace/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/Kolzodev712/cursor-hub-marketplace/releases/tag/v0.1.0

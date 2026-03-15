@@ -3,9 +3,16 @@
   "displayName": "Terraform Workflow",
   "version": "0.1.0",
   "description": "Terraform workflow: design review, implementation, testing, bugfix, PR review; documentation and security.",
-  "author": { "name": "Your Org" },
+  "author": {
+    "name": "Nikola Kolev",
+    "email": "nikolakolev712@gmail.com"
+  },
+  "homepage": "https://github.com/Kolzodev712/cursor-hub-marketplace",
+  "repository": "https://github.com/Kolzodev712/cursor-hub-marketplace",
   "license": "MIT",
   "keywords": ["terraform", "design-review", "implementation", "testing", "bugfix", "review"],
+  "category": "developer-tools",
+  "tags": ["terraform", "design-review", "testing", "bugfix", "pr-review"],
   "rules": "./rules/",
   "commands": "./commands/",
   "agents": "./agents/"

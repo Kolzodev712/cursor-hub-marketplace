@@ -3,9 +3,16 @@
   "displayName": "Design Log Foundation",
   "version": "0.1.0",
   "description": "Design-log methodology and manual create/record-step commands. Foundation for workflow recording.",
-  "author": { "name": "Your Org" },
+  "author": {
+    "name": "Nikola Kolev",
+    "email": "nikolakolev712@gmail.com"
+  },
+  "homepage": "https://github.com/Kolzodev712/cursor-hub-marketplace",
+  "repository": "https://github.com/Kolzodev712/cursor-hub-marketplace",
   "license": "MIT",
   "keywords": ["design-log", "workflow"],
+  "category": "developer-tools",
+  "tags": ["design-log", "workflow", "methodology"],
   "rules": "./rules/",
   "commands": "./commands/",
   "agents": "./agents/"
