@@ -1,0 +1,19 @@
+---
+description: "Terraform implementation discipline: small diffs, no scope creep, verification loop"
+alwaysApply: false
+globs:
+  - "**/*.tf"
+  - "**/*.tf.json"
+  - "**/.terraform.lock.hcl"
+---
+
+# Terraform Core (Implementation)
+
+- **Small diffs:** Prefer incremental changes. One logical change per edit session; avoid bundling unrelated fixes.
+- **No scope creep:** Implement only what the task or design log specifies. Do not add new resources or modules unless explicitly asked.
+- **Providers:** Do not add new providers or change provider versions unless the user or design log explicitly requests them.
+- **Verification:** After edits, run from the relevant module or repo root:
+  - `terraform fmt -recursive`
+  - `terraform validate`
+  - Optionally `terraform plan` (no apply in automation unless intended). Fix any failures before considering the task done.
+- **State and sensitive data:** Do not hardcode secrets; use variables or external secret management. Be aware of state implications (e.g. destroy/recreate) when changing identifiers.

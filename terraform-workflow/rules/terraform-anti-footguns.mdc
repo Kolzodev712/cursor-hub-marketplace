@@ -1,0 +1,15 @@
+---
+description: "Terraform pitfalls to avoid: state, sensitive data, drift, provider versions, secrets"
+alwaysApply: false
+globs:
+  - "**/*.tf"
+  - "**/*.tf.json"
+---
+
+# Terraform Anti-Footguns
+
+- **Sensitive data:** Mark sensitive outputs and variables; do not log or expose secrets. Use `sensitive = true` where appropriate.
+- **State:** Be aware that changing resource identifiers (e.g. name, key) can cause destroy/recreate. Prefer `moved` blocks or state mv when renaming.
+- **Drift:** Document assumptions about external changes. Consider lifecycle rules (ignore_changes) only when justified; document why.
+- **Provider versions:** Pin provider versions in required_providers; avoid unversioned or wildcard constraints in production.
+- **No secrets in code:** Do not commit secrets; use variables, env vars, or a secrets manager. Validate that no sensitive values appear in plan output or logs.

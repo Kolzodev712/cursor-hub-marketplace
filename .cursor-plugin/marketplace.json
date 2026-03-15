@@ -1,0 +1,37 @@
+{
+  "name": "workflow-packs",
+  "owner": {
+    "name": "Nikola Kolev",
+    "email": "nikolakolev712@gmail.com"
+  },
+  "metadata": {
+    "description": "Design-log workflow, and full workflows for Rust, Python, JS/TS, and Terraform (design review, implementation, testing, bugfix, review); documentation and security."
+  },
+  "plugins": [
+    {
+      "name": "design-log-foundation",
+      "source": "design-log-foundation",
+      "description": "Design-log methodology and manual create/record-step commands. Foundation for workflow recording."
+    },
+    {
+      "name": "rust-workflow",
+      "source": "rust-workflow",
+      "description": "Rust workflow: design review, implementation, testing, bugfix, PR review; plus documentation and security."
+    },
+    {
+      "name": "python-workflow",
+      "source": "python-workflow",
+      "description": "Python workflow: design review, implementation, testing, bugfix, PR review; plus documentation and security."
+    },
+    {
+      "name": "js-ts-workflow",
+      "source": "js-ts-workflow",
+      "description": "JS/TS workflow: design review, implementation, testing, bugfix, PR review; plus documentation and security."
+    },
+    {
+      "name": "terraform-workflow",
+      "source": "terraform-workflow",
+      "description": "Terraform workflow: design review, implementation, testing, bugfix, PR review; plus documentation and security."
+    }
+  ]
+}

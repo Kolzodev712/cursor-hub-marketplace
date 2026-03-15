@@ -1,0 +1,12 @@
+{
+  "name": "design-log-foundation",
+  "displayName": "Design Log Foundation",
+  "version": "0.1.0",
+  "description": "Design-log methodology and manual create/record-step commands. Foundation for workflow recording.",
+  "author": { "name": "Your Org" },
+  "license": "MIT",
+  "keywords": ["design-log", "workflow"],
+  "rules": "./rules/",
+  "commands": "./commands/",
+  "agents": "./agents/"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "python-workflow",
+  "displayName": "Python Workflow",
+  "version": "0.1.0",
+  "description": "Python workflow: design review, implementation, testing, bugfix, PR review; documentation and security.",
+  "author": { "name": "Your Org" },
+  "license": "MIT",
+  "keywords": ["python", "design-review", "implementation", "testing", "bugfix", "review"],
+  "rules": "./rules/",
+  "commands": "./commands/",
+  "agents": "./agents/"
+}

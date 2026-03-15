@@ -1,0 +1,20 @@
+---
+description: "Terraform code review checklist: correctness, state, sensitive data, providers, style"
+alwaysApply: false
+globs:
+  - "**/*.tf"
+  - "**/*.tf.json"
+---
+
+# Terraform Review
+
+When reviewing Terraform code, check:
+
+- **Correctness:** Syntax and configuration are valid; `terraform validate` passes. No unintended destroy/replace from identifier changes.
+- **State and lifecycle:** Changes that affect state (renames, moved blocks) are intentional and documented.
+- **Sensitive data:** No secrets in code or logs; sensitive outputs/variables marked; no sensitive data in plan output where avoidable.
+- **Providers:** Versions pinned; no unexpected provider changes.
+- **Style:** Consistent formatting (`terraform fmt`); clear naming and structure.
+- **Security:** No hardcoded credentials; least-privilege and data exposure considered.
+
+Prioritize findings as **must-fix** (correctness, safety, state integrity) vs **nice-to-have** (style, clarity).

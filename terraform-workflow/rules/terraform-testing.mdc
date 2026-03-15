@@ -1,0 +1,15 @@
+---
+description: "Terraform testing: plan checks, contract tests, no sensitive leakage"
+alwaysApply: false
+globs:
+  - "**/*.tf"
+  - "**/*.tf.json"
+  - "**/tests/**/*"
+---
+
+# Terraform Testing
+
+- **Plan as verification:** Use `terraform plan` to verify configuration; check for unexpected changes, destroy, or replace. Optionally use terraform test (HCL) or CI plan checks.
+- **No sensitive in output:** Ensure tests and plan output do not expose sensitive values. Use terraform test or custom checks to assert behavior without leaking secrets.
+- **Contract and structure:** When the project uses terraform test or similar, structure tests to assert expected resources and attributes; avoid brittle exact-match tests where possible.
+- **Coverage:** Focus on meaningful checks: critical resources exist, required attributes are set, no accidental data loss (e.g. unanticipated destroy). Do **not** add tests that only restate the config with no independent specification.

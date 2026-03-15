@@ -1,0 +1,12 @@
+{
+  "name": "rust-workflow",
+  "displayName": "Rust Workflow",
+  "version": "0.1.0",
+  "description": "Rust workflow: design review, implementation, testing, bugfix, PR review; documentation and security.",
+  "author": { "name": "Your Org" },
+  "license": "MIT",
+  "keywords": ["rust", "design-review", "implementation", "testing", "bugfix", "review"],
+  "rules": "./rules/",
+  "commands": "./commands/",
+  "agents": "./agents/"
+}

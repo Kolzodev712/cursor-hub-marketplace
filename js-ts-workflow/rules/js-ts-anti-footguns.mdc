@@ -1,0 +1,17 @@
+---
+description: "JS/TS pitfalls to avoid: any, async, globals, mutation, dependencies"
+alwaysApply: false
+globs:
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.js"
+  - "**/*.jsx"
+---
+
+# JS/TS Anti-Footguns
+
+- **Avoid `any`:** Prefer proper types or `unknown` with type guards. Use `any` only when necessary and document why.
+- **Async and promises:** Prefer async/await over raw promise chains for readability. Handle rejections; do not leave promises unhandled.
+- **Implicit globals:** Avoid polluting the global scope; use modules and explicit exports.
+- **Mutation and shared state:** Avoid mutating shared objects unless intentional; document assumptions. Prefer immutability where it simplifies reasoning.
+- **Dependencies:** Do not add dependencies for trivial utilities; prefer standard library or small, well-maintained packages. Check license and maintenance status.

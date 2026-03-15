@@ -1,0 +1,23 @@
+---
+description: "JS/TS code review checklist: correctness, API, types, style, tests"
+alwaysApply: false
+globs:
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.js"
+  - "**/*.jsx"
+  - "**/package.json"
+---
+
+# JS/TS Review
+
+When reviewing JavaScript/TypeScript code, check:
+
+- **Correctness:** Logic and types are correct; no obvious bugs or misuse of APIs.
+- **API stability:** Public API changes are intentional and documented; consider backward compatibility.
+- **Types:** No unnecessary `any`; types are precise where they matter. TypeScript strictness respected if the project uses it.
+- **Style and consistency:** Follow project style (ESLint, Prettier); consistent naming and structure.
+- **Security:** Inputs validated; no sensitive data in logs or error messages.
+- **Test adequacy:** New behavior has tests; existing tests still pass; edge cases considered.
+
+Prioritize findings as **must-fix** (correctness, safety, API contract) vs **nice-to-have** (style, clarity).

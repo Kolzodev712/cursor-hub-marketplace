@@ -1,0 +1,12 @@
+{
+  "name": "terraform-workflow",
+  "displayName": "Terraform Workflow",
+  "version": "0.1.0",
+  "description": "Terraform workflow: design review, implementation, testing, bugfix, PR review; documentation and security.",
+  "author": { "name": "Your Org" },
+  "license": "MIT",
+  "keywords": ["terraform", "design-review", "implementation", "testing", "bugfix", "review"],
+  "rules": "./rules/",
+  "commands": "./commands/",
+  "agents": "./agents/"
+}
